@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   }
@@ -57,9 +58,8 @@ a{
   font-size: 1em;
   color: #f26522;
 }
-.container{
-  padding-left: 50px;
-  padding-right: 50px;
+main{
+  padding: 0 50px;
 }
 .splash{
   height: 559px;
@@ -67,14 +67,12 @@ a{
   align-items: center;
   justify-content: center
 }
-.main{
-  padding-top: 80px;
-  padding-bottom: 80px;
+.description{
+  padding: 80px 0;
   }
-.main h1{
+.description h1{
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 45px;
+  margin: 0 0 45px;
 }
 .owners{
   display: flex;
@@ -104,26 +102,24 @@ a{
   overflow:hidden;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 #left-kitty{
   float: left;
 }
 #mid-kitty{
-  margin-left:55px;
-  margin-right: 55px;
+  margin:0 55px;
   float: left;
 }
-.contact h1{
+#getintouch{
   text-align: center;
-  margin-bottom: 45px;
-  margin-top: 0px;
+  margin: 0;
+  padding-top: 80px;
+  background-color: #eeeeee;
 }
 .contact{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 45px 0 80px;
   background-color: #eeeeee;
-  overflow:auto;
   display: flex;
   align-items: center;
   justify-content: center
@@ -133,18 +129,16 @@ a{
   background-color:white;
   padding: 30px;
   width: 30%;
-  float: left;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 80px;
-
-}
+  margin: 0 30px 80px;
+  }
 .map{
   height: 400px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  margin: 0;
 }
+
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
