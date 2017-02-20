@@ -4,6 +4,7 @@ body {
   }
 nav{
   height: 80px;
+  width: 100%;
   margin:0px;
 
 }
@@ -37,6 +38,7 @@ h1{
 h2{
   font-family: 'PT Sans Narrow';
   font-size: 1.5em;
+  text-align: center;
   text-transform: uppercase;
   color: #00897f;
 }
@@ -77,7 +79,7 @@ main{
 .owners{
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 .about{
   background-color: #eeeeee;
@@ -140,10 +142,129 @@ main{
 }
 
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+/* On devices narrower than 660px */
+@media(max-width: 660px) {
+  .splash{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    }
+  .splash img{
+      height: 250px;
+    }
+  .description{
+    padding: .5em 0;
+  }
+  .description h1{
+    text-align: center;
+    margin: 0 0 .5em;
+  }
+  .owners{
+    display: block;
+  }
+  .about{
+    padding: 30px;
+    margin-bottom: 0;
+    width: 90%;
+  }
+  #Kat{
+    float: none;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+  #Kat p{
+    margin-bottom: 0;
+  }
+  #Mavis{
+    float: none;
+    margin-left: 0;
+  }
+  .kitties{
+    height: 75%;
+    width: 100%;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #left-kitty{
+    float: left;
+  }
+  #mid-kitty{
+    margin:0 55px;
+    float: left;
+  }
+  #right-kitty{
+    display: none;
+  }
+  .contact{
+    padding: 20px 0 40px;
+  }
+  #getintouch{
+    padding-top: 40px;
+  }
+
+}
+@media screen and (max-width: 615px){
+  .kitties{
+    justify-content: center;
+  }
+  #mid-kitty{
+    display: none;
+  }
+  #getintouch{
+    display: none;
+  }
+  .contact{
+    display: block;
+    padding: 20px;
+  }
+.info{
+  width: auto;
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-bottom: 0;
+}
+  #hours{
+    float: none;
+    margin-bottom: 0;
+  }
+  #info{
+    float: none;
+}
+
+@media screen and (max-width:480px){
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+nav p{
+  display: none;
+}
+.description{
+  font-size: 0.8em;
+}
+  .kitties{
+    height: 50%;
+  }
+  .map{
+    height: 250px;
+    overflow: hidden;
+  }
+  .map img{
+    height: 250px;
+  }
+  footer h1{
+    height: 80px;
+  }
+
 }
 
 /* On devices wider than 940px */
-@media(min-width: 940px) {
+@media(max-width: 940px) {
+
 }
